@@ -9,9 +9,9 @@ Criar uma plataforma dedicada que facilite a transição de atletas para o merca
 - Alex Soares do Nascimento
 - Isabela Santos Souza
 - Raquel Henrique de Faria
-- Sarah Coutinho
+- Sarah Tolesano Coutinho
 - Gustavo de Araujo Carvalho
-- Henry Vitor 
+- Henry Vitor Leandro Lemos
 
 ## Tecnologias Utilizadas 
 
