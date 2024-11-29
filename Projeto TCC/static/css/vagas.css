@@ -1,0 +1,683 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+
+/* Estilos do menu hambúrguer */
+.menuHamburguer {
+    position: absolute;
+}
+
+.menu-btn {
+    font-size: 30px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.menuContent {
+    display: none;
+    position: absolute;
+    /* top: 40px; */
+    left: 0;
+    background-color: #ffffff;  
+    width: 50rem;
+    height: 145vh;
+    z-index: 1000;
+}
+
+.aNameTopMenuHamburguer{
+    display: block;
+    padding: 15px;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+.menuHamburguer .menuContent .toggleDropdown {
+    display: block;
+    padding: 15px;
+    color: #000000;
+    text-decoration: none;
+    font-size: 20px;
+
+}
+
+.menuContent .toggleDropdown:hover {
+    background-color: #336A2E;
+}
+
+.menuContentButtonReturn{
+    display: block;
+    padding: 15px;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+.menuContentButtonReturn:hover {
+    background-color: #336A2E;
+}
+
+/* Estilo para desfocar o conteúdo */
+.blur {
+    filter: blur(5px);
+    filter: brightness(0.2);
+    transition: filter 0.3s;
+}
+
+.curriculoDropdownContent {
+    display: none;
+    position: static;
+    left: 0;
+    background-color: #ffffff;  
+    width: 100%;
+    height: 100px;
+    /* z-index: 1000; */
+    margin-bottom: 0.6rem;
+}
+
+.editPerfilDropdownContent {
+    display: none;
+    position: static;
+    left: 0;
+    background-color: #ffffff;  
+    width: 100%;
+    height: 100px;
+    /* z-index: 1000; */
+    margin-bottom: 0.6rem;
+}
+
+.segurancaDropdownContent {
+    display: none;
+    position: static;
+    left: 0;
+    background-color: #ffffff;  
+    width: 100%;
+    height: 100px;
+    /* z-index: 1000; */
+    margin-bottom: 4rem;
+}
+
+.centralDeAjudaDropdownContent {
+    display: none;
+    position: static;
+    left: 0;
+    background-color: #ffffff;  
+    width: 100%;
+    height: 100px;
+    /* z-index: 1000; */
+    margin-bottom: 0.6rem;
+}
+
+.privacidadeDropdownContent {
+    display: none;
+    position: static;
+    left: 0;
+    background-color: #ffffff;  
+    width: 100%;
+    height: 100px;
+    /* z-index: 1000; */
+    margin-bottom: 4rem;
+}
+
+.notificacoesDropdownContent {
+    display: none;
+    position: static;
+    left: 0;
+    background-color: #ffffff;  
+    width: 100%;
+    height: 100px;
+    /* z-index: 1000; */
+}
+
+.containerHamburguerLinks .curriculoDropdown .curriculoDropdownContent .aDropdown{
+    display: block;
+    padding: 15px 15px 15px 2rem;
+    color: #000000;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.containerHamburguerLinks .curriculoDropdown .curriculoDropdownContent .aDropdown:hover{
+    background-color: #61c758;
+    transition: 0.7s;
+}
+
+.containerHamburguerLinks .editPerfilDropdown .editPerfilDropdownContent .aDropdown{
+    display: block;
+    padding: 15px 15px 15px 2rem;
+    color: #000000;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.containerHamburguerLinks .editPerfilDropdown .editPerfilDropdownContent .aDropdown:hover{
+    background-color: #61c758;
+    transition: 0.7s;
+}
+
+
+.containerHamburguerLinks .segurancaDropdown .segurancaDropdownContent .aDropdown{
+    display: block;
+    padding: 15px 15px 15px 2rem;
+    color: #000000;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.containerHamburguerLinks .segurancaDropdown .segurancaDropdownContent .aDropdown:hover{
+    background-color: #61c758;
+    transition: 0.7s;
+}
+
+.containerHamburguerLinks .centralDeAjudaDropdown .centralDeAjudaDropdownContent .aDropdown{
+    display: block;
+    padding: 15px 15px 15px 2rem;
+    color: #000000;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.containerHamburguerLinks .centralDeAjudaDropdown .centralDeAjudaDropdownContent .aDropdown:hover{
+    background-color: #61c758;
+    transition: 0.7s;
+}
+
+
+.containerHamburguerLinks .privacidadeDropdown .privacidadeDropdownContent .aDropdown{
+    display: block;
+    padding: 15px 15px 15px 2rem;
+    color: #000000;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.containerHamburguerLinks .privacidadeDropdown .privacidadeDropdownContent .aDropdown:hover{
+    background-color: #61c758;
+    transition: 0.7s;
+}
+
+
+.containerHamburguerLinks .notificacoesDropdown .notificacoesDropdownContent .aDropdown{
+    display: block;
+    padding: 15px 15px 15px 2rem;
+    color: #000000;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.containerHamburguerLinks .notificacoesDropdown .notificacoesDropdownContent .aDropdown:hover{
+    background-color: #61c758;
+    transition: 0.7s;
+}
+
+
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+body::-webkit-scrollbar {
+    display: none; /* Oculta a barra de rolagem */
+}
+
+.navbar {
+    width: 100%;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navbarTop, .navbarBottom {
+    width: 100%;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navbarTop {
+    display: flex;
+    align-items: center;
+    height: 120px;
+    background-color: #043600;
+}
+
+.menu {
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 65.5rem;
+    background-color: #ffffff;
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    z-index: 1;
+}
+
+.menu a {
+    display: block;
+    padding: 10px;
+    color: #000000;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    background-color: #336A2E;
+}
+
+
+
+.navbarBottom{
+    background-color: #225800;
+}
+
+.navbarTop .navbarLogomarca{
+    display: flex;
+    align-items: center;
+}
+
+.linkMenuhamburguer{
+    color: #ffffff;
+}
+
+.containerHamburguerLinks{
+    margin-top: 1rem;
+    margin: 1rem;
+}
+
+.menuContent .containerHamburguerLinks a{
+    color: #000000;
+    border-bottom: #000000 1px solid;
+    font-weight: 450;
+    font-size: 1.2rem;
+}
+
+.containerHamburguerLinks span{
+    font-size: 35px;
+    font-weight: 400;
+    margin-bottom: 2rem;
+}
+
+.navbarTop .navbarLogomarca i{
+    font-size: 40px;
+}
+
+.containerEmpty{
+    width: 20px;
+}
+
+.containerEmpty02{
+    width: 900px;
+}
+
+.containerEmpty03{
+    width: 30px;
+}
+
+.containerSeparacao02{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.navbarLogomarca img {
+    height: 150px; 
+}
+
+.navbarSearch {
+    height: 50px;
+    display: flex;
+    width: 500px;
+    margin: 0 20px; /* Espaçamento entre a logomarca e a foto de perfil */
+}
+
+.navbarSearch input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 25px 0 0 25px;
+    border: 1px solid #ffffff;
+    outline: none;
+    font-size: 16px;
+}
+
+.navbarSearch button {
+    padding: 10px;
+    border-radius: 0 25px 25px 0;
+    border: 1px solid #ffffff;
+    border-left: none; /* Remove a borda da esquerda */
+    background-color: #ffffff;
+    color: #043600;
+    cursor: pointer;
+}
+
+.navbarSearch button i {
+    font-size: 16px;
+}
+
+.navbarPhoto{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+}
+
+.navbarPhoto a img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+}
+
+.navbarPhotoHamburguer{
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+}
+
+.containerHamburguerPhoto .navbarPhotoHamburguer  {
+    font-size: 1.65rem;
+    margin-left: 1rem;
+}
+
+.containerTopMenuHamburguer{
+    background-color: #043600;
+}
+
+.navbarPhotoHamburguer a img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+}
+
+.navbarPhotoHamburguer span{
+    font-size: 25px;
+}
+
+.navbarBottom a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: 300;
+}
+
+.navbarLinks a:hover, .navbarBottom a:hover {
+    text-decoration: underline;
+}
+
+.navbarBottom a.active {
+    border-bottom: 2px solid #ffffff; /* Linha embaixo do link ativo */
+}
+
+
+.sectionBody{
+    background-color: #d1d1d1;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.containerPrincModal{
+    width: 100%;
+    height: 1350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.containerModals{
+    background-color: #ffffff;
+    width: 1000px;
+    height: 200px;
+    margin: 10px;
+    border-radius: 9px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#containerModal01{
+    display: flex;
+    flex-direction: row;
+}
+
+#containerModal02{
+    display: flex;
+    flex-direction: row;
+}
+
+#containerModal03{
+    display: flex;
+    flex-direction: row;
+}
+
+#containerModal04{
+    display: flex;
+    flex-direction: row;
+}
+
+#containerModal05{
+    display: flex;
+    flex-direction: row;
+}
+
+#containerModal06{
+    display: flex;
+    flex-direction: row;
+}
+
+.containerDivis01{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-self: center;
+    
+}
+
+.containerdiv01-1{
+    display: flex;
+    flex-direction: column;
+}
+
+/* Estilizando o container da imagem */
+.containerDivis01Img {
+    width: 220px; /* Defina o tamanho adequado */
+    height: auto; /* Mantém a proporção */
+    padding: 10px; /* Espaçamento ao redor da imagem */
+    background-color: #f0f0f0; /* Cor de fundo suave */
+    border-radius: 12px; /* Bordas arredondadas */
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    margin: 20px 15px 0 0;
+}
+
+/* Ajuste da imagem */
+.containerDivis01Img img {
+    width: 100%; /* Imagem ocupa a largura do container */
+    height: 150px; /* Mantém a proporção da imagem */
+    border-radius: 8px; /* Bordas levemente arredondadas */
+}
+
+.containerDivis02{
+    display: flex;
+    flex-direction: column;
+}
+
+.sectionBody .containerPrincModal .containerModals .containerDivis01 .containerDivis01h2{
+    font-weight: 500;
+    font-size: 26px;
+}
+
+.sectionBody .containerPrincModal .containerModals .containerDivis01 {
+    margin-left: 25px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.sectionBody .containerPrincModal .containerModals .containerDivis01 span{
+    font-size: 18px;
+    font-weight: 400;
+    color: #787878;
+}
+
+.sectionBody .containerPrincModal .containerModals .containerDivis01 span i{
+    color: #787878;
+}
+
+.sectionBody .containerPrincModal .containerModals .containerDivis02{
+    margin-right: 20px;
+}
+
+.sectionBody .containerPrincModal .containerModals .containerDivis02 .containerAvaliation{
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    margin-top: 12px;
+    align-items: center;
+}
+
+.sectionBody .containerPrincModal .containerModals .containerDivis02 .containerAvaliation span{
+    color: #000000;
+    font-weight: 500;
+    font-size: 18px;
+    margin-right: 7px;
+}
+
+.sectionBody .containerPrincModal .containerModals .containerDivis02 .containerAvaliation i{
+    color: #ffd700;
+    font-size: 18px;
+}
+
+.sectionBody .containerPrincModal .containerModals .containerDivis02 .containerDivis02Button{
+    border: none;
+    background-color: #336A2E;
+    color: #ffffff;
+    width: 300px;
+    height: 38px;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 500;
+    
+}
+
+
+
+.containerDivis02 .containerAvaliation {
+    margin-bottom: 65px;
+}
+
+.sectionBody .containerButtonReadMore{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.sectionBody .buttonReadMore{
+    border: none;
+    background-color: #336A2E;
+    color: #ffffff;
+    width: 300px;
+    height: 38px;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.footer{
+    height: 200px;
+    /* background-color: #336A2E; */
+    width: 100%;
+}
+
+.containerTopFooter{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    height: 80%;
+    align-items: center;
+    background-color: #336A2E;
+}
+
+.topFooter01 {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    justify-content: space-around;
+
+  }
+
+  .containerTopFooter input {
+    width: 30%;
+    padding: 10px;
+    border-radius: 5px 5px 5px 5px;
+    border: 1px solid #ffffff;
+    outline: none;
+    font-size: 16px;
+    margin-left: 3rem;
+    
+}
+  
+  .topFooter01 input[type="text"] {
+    width: 50%; /* Aumenta a largura da ba0ra de pesquisa */
+    padding: 10px;
+    
+  }
+  
+  .topFooter01 button {
+    width: 20%;
+    padding: 10px;
+    border-radius: 5px 5px 5px 5px; /* Arredonda a borda direita */
+    border: 1px solid #ccc;
+    background-color: #c8ffb5; /* Cor de fundo do botão */
+    color: #000; /* Cor do texto do botão */
+    cursor: pointer;
+    box-sizing: border-box;
+    margin-right: 12rem;
+  }
+  
+  .topFooter01 button span {
+    font-size: 16px;
+  }
+
+
+.topFooter02{
+    width: 50%;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    
+    
+}
+
+.circleIcon{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #D8FFA6;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+}
+
+.topFooter02 i{
+    color: #043600;
+    font-size: 30px;
+    margin-left: 12px;
+}
+
+.bottomFooter{
+    background-color:#043600;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bottomFooter span{
+    color: #ffffff;
+}
+
+
+

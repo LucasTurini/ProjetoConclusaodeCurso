@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+body {
+    background-color: #336a2e;
+    width: 100%;
+    height: 100vh;
+}
+
+body::-webkit-scrollbar {
+    display: none; /* Oculta a barra de rolagem */
+}
+
+.containerPrinc {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.containerLogin {
+    width: 500px;
+    height: 800px;
+    border-radius: 5%;
+    background-color: #043600;
+    display: grid;
+    justify-content: center;
+}
+
+.containerLogo{
+    width: 300px;
+    height: 300px;
+}
+
+.logoLogin {
+    width: 300px;
+    height: 300px;
+}
+
+.containerDatas {
+    display: flex;
+    flex-direction: column;
+}
+
+.containerEmpty {
+    height: 50px;
+}
+
+.containerEmpty02{
+    height: 10px;
+}
+
+.containerDatas input {
+    width: 300px;
+    height: 50px;
+    border-bottom: solid #ffffff 1px;
+    border-top: transparent; /*tirar borda do topo*/
+    border-left: transparent; /*tirar borda da esquerda*/
+    border-right: transparent; /*tirar borda da direita*/
+    background-color: transparent; /*tirar fundo do input*/
+}
+
+.containerDatas input::placeholder {
+    color: #ffffff;
+    font-family: 'Inter', sans-serif;
+    font-size: 18px; /* Ajusta o tamanho da fonte do placeholder */
+    font-weight: 300; /* Peso da fonte mais fino */
+}
+
+.containerLogin .containerButtons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    width: 100;
+}
+
+.btnLogin{
+    background-color: #ffffff;
+    padding: 10px;
+    font-weight: 800;
+    border: none;
+    border-radius: 25px; /* Ajuste o border-radius para px */
+    width: 90%;
+    text-align: center; /* Centraliza o texto */
+    box-sizing: border-box; /* Considera padding e border na largura total */
+}
+
+.btnSingIn{
+    background-color: #3ea301;
+    padding: 10px;
+    font-weight: 800;
+    border: none;
+    border-radius: 25px; 
+    width: 90%;
+    text-align: center; 
+    box-sizing: border-box; 
+}
+
+.btnPassword{
+    background-color: transparent ;/*tirar fundo do button*/
+    border-bottom: transparent; /*tirar borda debaixo*/
+    border-top: transparent; /*tirar borda do topo*/
+    border-left: transparent; /*tirar borda da esquerda*/
+    border-right: transparent; /*tirar borda da direita*/
+    font-family: 'Inter', sans-serif;
+    color: #ffffff;
+    font-weight: 300; /* Peso da fonte mais fino */
+    font-size: 18px; /* Ajusta o tamanho da fonte do placeholder */
+}
+
+
+.footer{
+    height: 200px;
+    /* background-color: #336A2E; */
+    width: 100%;
+}
+
+.containerTopFooter{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    height: 80%;
+    align-items: center;
+    background-color: #336A2E;
+}
+
+.topFooter01 {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    justify-content: space-around;
+
+  }
+
+  .containerTopFooter input {
+    width: 30%;
+    padding: 10px;
+    border-radius: 5px 5px 5px 5px;
+    border: 1px solid #ffffff;
+    outline: none;
+    font-size: 16px;
+    margin-left: 3rem;
+    
+}
+  
+  .topFooter01 input[type="text"] {
+    width: 50%; /* Aumenta a largura da ba0ra de pesquisa */
+    padding: 10px;
+    
+  }
+  
+  .topFooter01 button {
+    width: 20%;
+    padding: 10px;
+    border-radius: 5px 5px 5px 5px; /* Arredonda a borda direita */
+    border: 1px solid #ccc;
+    background-color: #c8ffb5; /* Cor de fundo do botão */
+    color: #000; /* Cor do texto do botão */
+    cursor: pointer;
+    box-sizing: border-box;
+    margin-right: 12rem;
+  }
+  
+  .topFooter01 button span {
+    font-size: 16px;
+  }
+
+
+.topFooter02{
+    width: 50%;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    
+    
+}
+
+.circleIcon{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #D8FFA6;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+}
+
+.topFooter02 i{
+    color: #043600;
+    font-size: 30px;
+    margin-left: 12px;
+}
+
+.bottomFooter{
+    background-color:#043600;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bottomFooter span{
+    color: #ffffff;
+}
+
+.footer{
+    height: 200px;
+    width: 100%;
+}
+
+.containerTopFooter{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    height: 80%;
+    align-items: center;
+    background-color:#043600;
+}
+
+.topFooter01 {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    justify-content: space-around;
+
+  }
+
+  .containerTopFooter input {
+    width: 30%;
+    padding: 10px;
+    border-radius: 5px 5px 5px 5px;
+    border: 1px solid #ffffff;
+    outline: none;
+    font-size: 16px;
+    margin-left: 3rem;
+    
+}
+  
+  .topFooter01 input[type="text"] {
+    width: 50%; /* Aumenta a largura da ba0ra de pesquisa */
+    padding: 10px;
+    
+  }
+  
+  .topFooter01 button {
+    width: 20%;
+    padding: 10px;
+    border-radius: 5px 5px 5px 5px; /* Arredonda a borda direita */
+    border: 1px solid #ccc;
+    background-color: #c8ffb5; /* Cor de fundo do botão */
+    color: #000; /* Cor do texto do botão */
+    cursor: pointer;
+    box-sizing: border-box;
+    margin-right: 12rem;
+  }
+  
+  .topFooter01 button span {
+    font-size: 16px;
+  }
+
+
+.topFooter02{
+    width: 50%;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    
+    
+}
+
+.circleIcon{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #D8FFA6;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+}
+
+.topFooter02 i{
+    color: #043600;
+    font-size: 30px;
+    margin-left: 12px;
+}
+
+.bottomFooter{
+    background-color: #336A2E;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bottomFooter span{
+    color: #ffffff;
+}

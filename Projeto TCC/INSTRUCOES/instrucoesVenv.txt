@@ -1,0 +1,4 @@
+RODAR:
+.venv\Scripts\activate
+PARA ENTRAR NO AMBINTE venv
+

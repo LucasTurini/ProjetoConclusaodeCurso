@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="../static/css/login.css" /> <!-- Link CSS-->
+    <link rel="shortcut icon" href="{{ url_for('static', filename='img/Logo/logo.jpeg') }}" type="image/x-icon" /> <!-- Link favicon-->
+    <script src="https://kit.fontawesome.com/91a34a7460.js" crossorigin="anonymous" ></script> <!-- Link fonts awesome-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" /> <!-- Link fonts google-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /> <!-- Link fonts google-->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet"  /> <!-- Link fonts google-->
+    <script src="../static/js/login.js"></script> <!-- Link de script para java script-->
+
+  
+
+
+  </head>
+
+  <body>
+    <div class="containerPrinc">
+      <div class="containerLogin">
+        <div class="containerLogo">
+          <img src="../static/img//Logo/logo.png" alt="Logo" class="logoLogin" />
+        </div>
+        <form id="login-form">
+
+        </form>
+        <div class="containerDatas">
+          <input type="text" placeholder="Insira seu e-mail:" />
+          <div class="containerEmpty"></div>
+          <!-- Div vazia para separar os inputs -->
+          <input type="text" placeholder="Insira sua senha:" />
+        </div>
+
+        <div class="containerButtons">
+
+                
+                <button class="btnLogin" class="btn" onclick="goToPageVagas()">ENTRAR</button>
+                <div class="containerEmpty02"></div>
+                <button class="btnSingIn" class="btn" onclick="goToPageCadastro()">CADASTRE-SE</button>
+                <div class="containerEmpty02"></div>
+                <label for="" class="alterarbutton">Clique abaixo para mudar o modo de login</label>
+                <button id="toggleButton" class="btnClient" onclick="toggleButton()"></button>
+                <div class="containerEmpty02"></div>
+
+                <button class="btnPassword" class="btn" onclick="goToPageRedefinePassword()">Esqueci minha senha</button>
+            
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <footer class="footer">
+
+      <div class="bottomFooter">
+        <span>CopyRight 2024 &copy Todos os direitos Reservados</span>
+      </div>
+    </footer>
+
+    
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>

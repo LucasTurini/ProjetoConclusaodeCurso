@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Campeonatos</title>
+    <link rel="stylesheet" href="../static/css/campeonatos.css" /> <!-- Link CSS-->
+        <link rel="shortcut icon" href="img/Logo/logo.jpeg" type="image/x-icon" /> <!-- Link favicon-->
+        <script src="https://kit.fontawesome.com/91a34a7460.js" crossorigin="anonymous"></script> <!-- Link fonts awesome-->
+        <link rel="preconnect" href="https://fonts.googleapis.com" /> <!-- Link fonts google-->
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /> <!-- Link fonts google-->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet" /> <!-- Link fonts google-->
+    <script src="../static/js/campeonato.js"></script> <!-- Link de script para java script-->
+
+
+</head>
+
+<body>
+    <!-- Menu Hambúrguer -->
+    <div class="menuHamburguer">
+      <div class="menuContent">
+
+        <div class="containerTopMenuHamburguer">
+        <!-- Botão de voltar -->
+        <a href="" onclick="toggleMenuReturn()" class="menuContentButtonReturn"> Voltar</a>
+
+        <div class="containerHamburguerPhoto">
+        <!-- foto de perfil Menu Hamburguer -->
+          <div class="navbarPhotoHamburguer">
+            <a href="telaPerfil.html" >
+              <img src="../static/img/Perfil/perfil.png" alt="" />
+                <a href="../templates/telaPerfil.html" class="aNameTopMenuHamburguer"> Alex Soares Do Nascimento </a>
+            </a>
+          </div>
+          
+        </div>
+        </div>
+
+
+        <div class="containerHamburguerLinks">
+          <span>Configurações</span>
+          
+
+          <div class="curriculoDropdown">
+            <a href="javascript:void(0);" onclick="toggleMenuButtonCurriculoDropdown()" class="toggleDropdown">Currículo</a>
+
+            <div class="curriculoDropdownContent">
+                <a href="##########" class="aDropdown">Currículos enviados</a>
+                <a href="" class="aDropdown">Editar currículo</a>
+            </div>
+
+          </div>
+
+
+          
+          <div class="editPerfilDropdown">
+            <a href="javascript:void(0);" onclick="toggleMenuButtonEditarPerfilDropdown()" class="toggleDropdown">Editar perfil</a>
+
+            <div class="editPerfilDropdownContent">
+                <a href="" class="aDropdown">Mudar nome</a>
+                <a href="" class="aDropdown">Adicionar foto</a>
+            </div>
+
+          </div>
+
+
+
+          <div class="segurancaDropdown">
+            <a href="javascript:void(0);" onclick="toggleMenuButtonSegurancaDropdown()" class="toggleDropdown">Segurança</a>
+
+            <div class="segurancaDropdownContent">
+                <a href="" class="aDropdown">Alterar e-mail</a>
+                <a href="" class="aDropdown">Alterar numero</a>
+                <a href="" class="aDropdown">Alterar senha</a>
+            </div>
+          </div>
+
+
+
+          <div class="centralDeAjudaDropdown">
+            <a href="javascript:void(0);" onclick="toggleMenuButtonCentraDeAjudaDropdown()" class="toggleDropdown">Central de Ajuda</a>
+
+            <div class="centralDeAjudaDropdownContent">
+                <a href="" class="aDropdown">Duvidas frequentes</a>
+                <a href="" class="aDropdown">Suporte</a>
+            </div>
+          </div>
+
+
+          
+          <div class="privacidadeDropdown">
+            <a href="javascript:void(0);" onclick="toggleMenuButtonPrinvacidadeDropdown()" class="toggleDropdown">Privacidade</a>
+
+            <div class="privacidadeDropdownContent">
+                <a href="" class="aDropdown">Politica de privacidade</a>
+                <a href="" class="aDropdown">Termos de uso</a>
+                <a href="" class="aDropdown">Condições e regras do app</a>
+            </div>
+          </div>
+
+
+
+          <div class="notificacoesDropdown">
+            <a href="javascript:void(0);" onclick="toggleMenuButtonNotificacoesDropdown()" class="toggleDropdown">Notificações</a>
+
+            <div class="notificacoesDropdownContent">
+                <p>Notificações</p>
+                <!-- botão de notificação on e off -->
+            </div>
+          </div>
+
+
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Conteúdo da página -->
+    <div class="content">
+        <header>
+            <nav class="navbar">
+    
+                <!-- começo navbar top -->
+                <div class="navbarTop">
+    
+                    <!-- Começo Divisão 1 da navbar Top -->
+                    <div class="containerSeparacao01">
+    
+                        <!-- logomarca e menu hamburguer -->
+                        <div class="navbarLogomarca">
+                            <!-- Esse é um código JavaScript que faz o navegador executar a expressão dentro do void(0), 
+                             que retorna undefined. Como resultado, não acontece nada visível. Basicamente, ele anula 
+                             qualquer ação padrão de navegação. -->
+                            <a class="linkMenuhamburguer" href="javascript:void(0);" onclick="toggleMenu()" >
+                                <!-- menu hambunguer -->
+                                <i class="fa-solid fa-bars"></i>
+                              </a>
+                              
+    
+                            <!-- container vazio para separar o menu da logomarca  -->
+                            <div class="containerEmpty"></div>
+    
+                            <!-- img logomarca -->
+                            <a href="vagas.html">
+                                <img src="../static/img/Logo/logomarca.png" alt="Logomarca">
+                            </a>
+                        </div>
+    
+                    </div>
+    
+    
+                    <!-- container vazio para separar as divisões 1 e 2  -->
+                    <div class="containerEmpty02"></div>
+    
+    
+                    <!-- Começo Divisão 2 da navbar Top -->
+                    <div class="containerSeparacao02">
+                        <!-- barra de pesquisa -->
+                        <div class="navbarSearch">
+                            <input type="text" placeholder="Pesquisar...">
+                            <button type="submit">
+                                <i class="fa fa-search"></i>
+                            </button>
+                        </div>
+    
+                        <div class="containerEmpty03"></div>
+    
+                        <!-- foto de perfil navbar -->
+                        <div class="navbarPhoto">
+                            <a href="telaPerfil.html">
+                                <img src="../static/img/Perfil/perfil.PNG" alt="">
+                            </a>
+                        </div>
+                    </div>
+    
+    
+    
+                </div>
+                <!-- fim navbar top -->
+    
+                <!-- começo navbar bottom -->
+                <div class="navbarBottom">
+    
+                    <a href="vagas.html">Vagas</a>
+                    <a href="campeonato.html">Campeonato</a>
+                    <a href="mensagens.html">Mensagens</a>
+                </div>
+    
+                <!-- fim navbar bottom -->
+            </nav>
+        </header>
+    
+    
+        <section class="sectionBody">
+    
+            <div class="containerPrincModal">
+    
+                <div class="containerModals" id="containerModal01">
+    
+                    <div class="containerDivis01">
+                        
+                        <div class="containerImg">
+                            <img class="containerDivis01img01" src="../static/img/Modalidades/ginasticaDeArgolas.jpeg">
+                        </div>
+    
+                        <div class="containerEmpty"></div>
+    
+                        <div class="containerDatas">
+    
+                            <div class="containerDate">
+                                <div class="containerSep01">
+                                    <i class="fa-solid fa-calendar-days"></i>
+                                    <span>Data:</span>
+                                </div>
+    
+                                <div class="containerSep02">
+                                    <span>15/09/2024 a 18/09/2024</span>
+                                </div>
+                            </div>
+    
+                            <div class="containerLocal">
+                                <div class="containerSep01">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    <span>Local:</span>
+                                </div>
+    
+                                <div class="containerSep02">
+                                    <span>Rio de Janeiro - RJ  |  Brasil</span>
+                                </div>
+                            </div>
+    
+                            <div class="containerLimitEnrollment">
+                                <div class="containerSep01">
+                                    <i class="fa-solid fa-calendar-days"></i>
+                                    <span>Limite de Inscrição:</span>
+                                </div>
+    
+                                <div class="containerSep02">
+                                    <span>15/09/2024 - 06:00</span>
+                                </div>
+                            </div>
+    
+                        </div>
+                    </div>
+    
+                    <div class="containerDivis02">
+                        <span class="modalNameGinasticaArgolas">Ginastica De Argolas</span>
+                       <!-- Botão de inscrição -->
+                        <button onclick="openForm()" class="containerDivis02Button">Inscrever-se</button>
+                    </div>
+
+                    <!-- Formulário de inscrição em um popup -->
+                     <div class="form-popup" id="formInscricao">
+                        <h3>Inscrição para Ginástica Artística</h3>
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" required>
+                        <label for="idade">Idade:</label>
+                        <input type="number" id="idade" required>
+                        <label for="cidade">Cidade:</label>
+                         <input type="text" id="cidade" required>
+                         <button onclick="inscrever()" class="btn">Enviar</button>
+                        <button onclick="closeForm()" class="btn-close">Fechar</button>
+                    </div>
+
+
+
+
+
+                </div>
+
+                 
+    
+    
+                <div class="containerModals" id="containerModal02">
+    
+                    <div class="containerDivis01">
+                        <div class="containerImg">
+                            <img class="containerDivis01img02" src="../static/img/Modalidades/futsal.jpg">
+                        </div>
+                        <div class="containerEmpty"></div>
+                        <div class="containerDatas">
+    
+                            <div class="containerDate">
+                                <div class="containerSep01">
+                                    <i class="fa-solid fa-calendar-days"></i>
+                                    <span>Data:</span>
+                                </div>
+    
+                                <div class="containerSep02">
+                                    <span>25/12/2024 a 29/12/2024</span>
+                                </div>
+                            </div>
+    
+                            <div class="containerLocal">
+                                <div class="containerSep01">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    <span>Local:</span>
+                                </div>
+    
+                                <div class="containerSep02">
+                                    <span>Barra Funda - SP  |  Brasil</span>
+                                </div>
+                            </div>
+    
+                            <div class="containerLimitEnrollment">
+                                <div class="containerSep01">
+                                    <i class="fa-solid fa-calendar-days"></i>
+                                    <span>Limite de Inscrição:</span>
+                                </div>
+    
+                                <div class="containerSep02">
+                                    <span>24/12/2024 - 06:00</span>
+                                </div>
+                            </div>
+    
+                        </div>
+                    </div>
+    
+                    <div class="containerDivis02">
+                        <span class="modalNameFutsal">Futsal - Masculino</span>
+                        <button class="containerDivis02Button" onclick="goToPageInscricao()"> Inscrever-se</button>
+                    </div>
+                </div>
+    
+    
+                <div class="containerModals" id="containerModal03">
+    
+                    <div class="containerDivis01">
+                        <div class="containerImg">
+                            <img class="containerDivis01img02" src="../static/img/Modalidades/ginasticaAerobica.jpg">
+                        </div>
+                        <div class="containerEmpty"></div>
+                        <div class="containerDatas">
+    
+                            <div class="containerDate">
+                                <div class="containerSep01">
+                                    <i class="fa-solid fa-calendar-days"></i>
+                                    <span>Data:</span>
+                                </div>
+    
+                                <div class="containerSep02">
+                                    <span>05/11/2024 a 09/11/2024</span>
+                                </div>
+                            </div>
+    
+                            <div class="containerLocal">
+                                <div class="containerSep01">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    <span>Local:</span>
+                                </div>
+    
+                                <div class="containerSep02">
+                                    <span>Aracaju - SE  |  Brasil</span>
+                                </div>
+                            </div>
+    
+                            <div class="containerLimitEnrollment">
+                                <div class="containerSep01">
+                                    <i class="fa-solid fa-calendar-days"></i>
+                                    <span>Limite de Inscrição:</span>
+                                </div>
+    
+                                <div class="containerSep02">
+                                    <span>16/11/2024 - 11:59</span>
+                                </div>
+                            </div>
+    
+                        </div>
+                    </div>
+    
+    
+    
+                    <div class="containerDivis02">
+                        <span class="modalNameGinasticaAerobica">Ginastica Aerobica</span>
+                        <button class="containerDivis02Button" onclick="goToPageInscricao()"> Inscrever-se</button>
+                    </div>
+                </div>
+    
+            </div>
+    
+    
+    
+            <div class="containerButtonReadMore">
+                <button class="buttonReadMore">Ver Mais</button>
+            </div>
+    
+    
+        </section>
+    
+        <footer class="footer">
+
+            <div class="containerTopFooter">
+              <div class="topFooter01">
+                <input type="text" placeholder="Pesquisar..." />
+                
+                <button type="submit">
+                  <span>Enviar</span>
+                </button>
+              </div>
+    
+              <div class="topFooter02">
+    
+                <div class="circleIcon">
+                  <a href="https://wa.me/5511995685300">
+                    <i class="fa-brands fa-whatsapp"></i>
+                  </a>
+                </div>
+    
+                <div class="circleIcon">
+                  <a href="">
+                    <i class="fa-brands fa-instagram"></i>
+                  </a>
+                </div>
+    
+                <div class="circleIcon">
+                  <a href="">
+                    <i class="fa-brands fa-facebook"></i>
+                  </a>
+                </div>
+    
+                <div class="circleIcon">
+                  <a href="">
+                    <i class="fa-brands fa-twitter"></i>
+                  </a>
+                </div>
+    
+              </div>
+          </div>
+    
+            <div class="bottomFooter">
+              <span>CopyRight 2024 &copy Todos os direitos Reservados</span>
+            </div>
+    
+    
+          </footer>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

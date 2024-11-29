@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css -->
+    <link rel="stylesheet" href="../static/css/telaPerfil.css">
+    <!-- bootstrao -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!-- icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="shortcut icon" href="img/Logo/logo.jpeg" type="image/x-icon" /> <!-- Link favicon-->
+    <script src="https://kit.fontawesome.com/91a34a7460.js" crossorigin="anonymous"></script> <!-- Link fonts awesome-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" /> <!-- Link fonts google-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /> <!-- Link fonts google-->
+    <title>Perfil</title>
+    <script src="telaperfil.js"></script>
+
+    
+
+</head>
+<body>
+    <!-- navbar -->
+    <div class="navbarTop">
+        <div class="icon-voltar"> <a 
+          onclick="window.history.back()"><i class="bi bi-arrow-left-short text-white"></i></a></div>
+    </div>
+
+    <!-- container principal -->
+    <div class="container-principal">
+            <!-- containerperfil -->
+            <div class="container-perfil">
+                <div> <img class="perfil" src="../static/img/Perfil/perfil.PNG" alt=""></div>
+                <h1 class="name-perfil">Alex Soares do Nascimento</h1>
+                <div class="botoes">
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne" onclick="toggleOpenDados()">
+                              Dados Pessoais
+                            </button>
+                          </h2>
+                          <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body" style="text-align: start; "><a href="">Mudar Senha</a> <br>
+                                                        <a href="">Mudar E-mail</a> <br>
+                                                        <a href="">Mudar Numero</a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo" onclick="toggleOpenCurriculo()">
+                              Curriculo
+                            </button>
+                          </h2>
+                          <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample" >
+                            <div class="accordion-body" style="text-align: start;"><a href="">Adicionar informações</a></div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree" onclick="toggleOpenCentral()">
+                              Central de Ajuda
+                            </button>
+                          </h2>
+                          <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body" style="text-align: start;"> <a href="">Duvidas Frequentes</a> <br>
+                                                          <a href="">Suportes</a></div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour" onclick="toggleOpenSeguranca()">
+                              Segurança
+                            </button>
+                          </h2>
+                          <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body" style="text-align: start;"><a href="">Mudar Nome</a> <br>
+                                                                                  <a href="">Mudar Foto</a></div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive" onclick="toggleOpenPrivacidade()">
+                              Privacidade
+                            </button>
+                          </h2>
+                          <div id="flush-collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body" style="text-align: start;"><a href="">Adicionar Experiencia</a></div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+                <div><a href="login.html"><button class="sair"> <i class="bi bi-door-open-fill"></i> Sair dessa conta</button></a></div>
+            </div>
+
+
+
+
+
+
+
+
+
+            <div class="containerTodasInfos">
+
+
+                <div class="container-experienciaDados">
+                  <div class="containerDadosDados">
+                    <div class="containerDadosDadosDiv01">
+                      <h3>Dados Pessoais</h3>
+                      <span class="spanDados">Alex Soares</span>
+                      <span class="spanDados">alexsn0155@gmail.com</span>
+                      <span class="spanDados">+55 (11) 995685300</span>
+                      <span class="spanDados">18/07/2006</span>
+                    </div>
+
+                    <div class="containerDadosDadosDiv02">
+                      <h3>Biografia</h3>
+                      <span>Sou um atleta profissional de futsal com [X] anos de experiência, especializado em atuar como pivô. Ao longo da minha carreira, conquistei títulos importantes em equipes de destaque no cenário nacional. Além das vitórias em quadra, me dedico a promover o esporte em projetos sociais, ajudando a desenvolver o futsal entre jovens e comunidades. Sempre em busca de novos desafios, estou aberto a conexões e oportunidades no mundo esportivo.</span>
+                      <button class="buttonReadMore">Editar informações</button>
+                    </div>
+
+                    
+                  </div>
+                </div>
+
+
+
+                <div class="container-experienciaCurriculo">
+                  <div class="containerDados">
+                    <div class="containerDadosCurriculoDiv01">
+                      <h4>Curriculo</h4>
+
+                      <div class="containerDadosCurriculoDiv01-01">
+                        <span>Adicionas Curriculo</span>
+                        <button>Procurar</button>
+                      </div>
+
+                      <div class="containerDadosCurriculoDiv01-02">
+                        <span>Vizualizar Curriculo</span>
+                        <button>Vizualizar</button>
+                      </div>
+
+                    </div>
+
+
+                    <div class="containerDadosCurriculoDiv02">
+                      <h4>O que deve ter?</h4>
+                      <ul>
+                        <li>Nome Completo</li>
+                        <li>Endereço</li>
+                        <li>Telefone</li>
+                        <li>E-mail Profissional</li>
+                        <li>Resumo de Qualificações</li>
+                        <li>Formaçao Academica</li>
+                        <li>Experiencia Profissional</li>
+                        <li>Habilidades</li>
+                        <li>Cursos e certificações (Se aplicavel)</li>
+                      </ul>
+                       <button>Seu Curriculo esta sendo analaisado!</button>
+                    </div>
+
+                  </div>
+                </div>
+
+                <div class="container-experienciaCentral">
+                  <div class="containerDados">
+                    <h3>Central De Ajuda</h3>
+                    <div class="containerDadosCentral">
+                      <ul>
+                        <li>FAQ (Perguntas Frequentes)</li>
+                        <li>Guias e Tutoriais</li>
+                        <li>Pesquisa de Problemas</li>
+                        <li>Contato com Suporte</li>
+                        <li>Status do Serviço </li>
+                        <li>Políticas e Termos</li>
+                      </ul>
+                      <button>Feedback</button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="container-experienciaSeguranca">
+                  <div class="containerDados">
+                    <div class="containerDadosSegurancah3">
+                      <h3>Segurança</h3>
+                    </div>
+                    <div class="containerDadosSegurancaDiv01">
+
+                      <div class="containerDadosSegurancaDiv01-01">
+                        <span>Autenticação de Dois Fatores</span>
+                        <div class="liga-desliga">
+                          <input type="checkbox" class="liga-desliga_checkbox" id="liga-desliga">
+                          <label for="liga-desliga" class="liga-desliga_botao"></label>
+                        </div>
+                      </div>
+
+                      <div class="containerDadosSegurancaDiv01-02">
+                        <button>Mudar Senha</button>
+                      </div>
+
+                    </div>
+
+
+                    <div class="containerDadosSegurancaDiv02">
+
+                      <div class="containerDadosSegurancaDiv02-01">
+                        <h3>Gerenciamento de Dispositivos</h3>
+                        <ul class="containerDadosSegurancaDiv02-01List01-01">
+                          <li>Iphone 13 Pro</li>
+                        </ul>
+
+                        <ul class="containerDadosSegurancaDiv02-01List02-01">
+                          <li>Último acesso: 26/08/2024, 10:15 AM</li>
+                          <li>Localização: São Paulo, Brasil</li>
+                        </ul>
+
+                        <button>Remover</button>
+                      </div>
+                      
+                      <div class="containerDadosSegurancaDiv02-02">
+                        <ul class="containerDadosSegurancaDiv02-01List01-02">
+                          <li>Iphone 13 Pro</li>
+                        </ul>
+
+                        <ul class="containerDadosSegurancaDiv02-01List02-02">
+                          <li>Último acesso: 26/08/2024, 10:15 AM</li>
+                          <li>Localização: São Paulo, Brasil</li>
+                        </ul>
+
+                        <button>Remover</button>
+                      </div>
+
+
+                        <div class="containerDadosSegurancaDiv02-03">
+                        <ul class="containerDadosSegurancaDiv02-01List01-03">
+                          <li>Iphone 13 Pro</li>
+                        </ul>
+
+                        <ul class="containerDadosSegurancaDiv02-01List02-03">
+                          <li>Último acesso: 26/08/2024, 10:15 AM</li>
+                          <li>Localização: São Paulo, Brasil</li>
+                        </ul>
+
+                        <button>Remover</button>
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                </div>
+
+                
+                <div class="container-experienciaPrivacidade">
+                  <div class="containerDados">
+                    <div class="containerDadosPrivacidadeDiv01h3">
+                      <h3>Privacidade </h3>
+                    </div>
+                    <div class="containerDadosPrivacidadeDiv01">
+                      <ul>
+                        <li>Configurações de Visibilidade de Perfil</li>
+                        <li>Gerenciamento de Dados Pessoais</li>
+                        <li>Controle de Publicidade</li>
+                        <li>Política de Privacidade</li>
+                        <li>Histórico de Atividades</li>
+                        <li>Políticas e Termos</li>
+                      </ul>
+                    </div>
+
+
+                    <div class="containerDadosPrivacidadeDiv02">
+                        <div class="containerDadosPrivacidadeDiv02h3">
+                           <h3>Permissões</h3> 
+                        </div>
+                      <div class="containerDadosPrivacidadeDiv02-01">
+                        <span>Localização</span>
+                        <div class="liga-desliga01"></div>
+                          <input type="checkbox" class="liga-desliga_checkbox01" id="liga-desliga01">
+                          <label for="liga-desliga01" class="liga-desliga_botao01"></label>
+                      </div>
+
+                      
+
+                      <div class="containerDadosPrivacidadeDiv02-02">
+                        <span>Consentimento de Cookies</span>
+                        <div class="liga-desliga02"></div>
+                        <input type="checkbox" class="liga-desliga_checkbox02" id="liga-desliga02">
+                        <label for="liga-desliga02" class="liga-desliga_botao02"></label>
+                      </div>
+                  
+
+                      <div class="containerDadosPrivacidadeDiv02-03">
+                        <span>Compartilhamento de Dados</span>
+                        <div class="liga-desliga03"></div>
+                          <input type="checkbox" class="liga-desliga_checkbox03" id="liga-desliga03">
+                          <label for="liga-desliga03" class="liga-desliga_botao03"></label>
+                      </div>
+                    </div>
+                    </div>
+                </div>
+                  
+              </div>
+
+                
+            
+            
+
+
+
+
+
+
+
+    </div>
+
+    <footer class="footer">
+
+        <div class="containerTopFooter">
+          <div class="topFooter01">
+            <input type="text" placeholder="Pesquisar..." />
+            
+            <button type="submit">
+              <span>Enviar</span>
+            </button>
+          </div>
+
+          <div class="topFooter02">
+
+            <div class="circleIcon">
+              <a href="https://wa.me/5511995685300">
+                <i class="fa-brands fa-whatsapp"></i>
+              </a>
+            </div>
+
+            <div class="circleIcon">
+              <a href="">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+            </div>
+
+            <div class="circleIcon">
+              <a href="">
+                <i class="fa-brands fa-facebook"></i>
+              </a>
+            </div>
+
+            <div class="circleIcon">
+              <a href="">
+                <i class="fa-brands fa-twitter"></i>
+              </a>
+            </div>
+
+          </div>
+      </div>
+
+        <div class="bottomFooter">
+          <span>CopyRight 2024 &copy Todos os direitos Reservados</span>
+        </div>
+
+
+      </footer>
+
+
+
+    
+
+
+
+
+
+</body>
+</html>

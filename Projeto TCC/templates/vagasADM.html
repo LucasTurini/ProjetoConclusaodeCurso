@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vagas</title>
+    <link rel="stylesheet" type="text/css" href="../static/css/vagasADM.css">
+    <script src="../static/js/vagasADM.js"></script>
+    <!-- Link CSS-->
+    <base href="/">
+     
+    <link rel="shortcut icon" href="../static/img/Logo/logo.jpeg" type="image/x-icon" />
+    <!-- Link favicon-->
+    <script
+      src="https://kit.fontawesome.com/91a34a7460.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Link fonts awesome-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <!-- Link fonts google-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Link fonts google-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Link fonts google-->
+    <!-- Link de script para java script-->
+  </head>
+
+  <body>
+    <!-- Menu Hambúrguer -->
+    <div class="menuHamburguer">
+      <div class="menuContent">
+
+        <div class="containerTopMenuHamburguer">
+        <!-- Botão de voltar -->
+        <a href="" onclick="toggleMenuReturn()" class="menuContentButtonReturn"> Voltar</a>
+
+        <div class="containerHamburguerPhoto">
+        <!-- foto de perfil Menu Hamburguer -->
+          <div class="navbarPhotoHamburguer">
+            <a href="../templates/telaPerfilaADM.html" >
+              <img src="../static/img/Perfil/perfil.PNG" alt="Foto de perfil" />
+                <a href="../templates/telaPerfilaADM.html" class="aNameTopMenuHamburguer"> Alex Soares Do Nascimento </a>
+            </a>
+          </div>
+          
+        </div>
+        </div>
+
+
+        <div class="containerHamburguerLinks">
+          <span>Configurações</span>
+          
+
+          <div class="curriculoDropdown">
+            <a href="javascript:void(0);" onclick="toggleMenuButtonCurriculoDropdown()" class="toggleDropdown">Currículo</a>
+
+            <div class="curriculoDropdownContent">
+                <a href="##########" class="aDropdown">Currículos enviados</a>
+                <a href="" class="aDropdown">Editar currículo</a>
+            </div>
+
+          </div>
+
+
+          
+          <div class="editPerfilDropdown">
+            <a href="javascript:void(0);" onclick="toggleMenuButtonEditarPerfilDropdown()" class="toggleDropdown">Editar perfil</a>
+
+            <div class="editPerfilDropdownContent">
+                <a href="" class="aDropdown">Mudar nome</a>
+                <a href="" class="aDropdown">Adicionar foto</a>
+            </div>
+
+          </div>
+
+
+
+          <div class="segurancaDropdown">
+            <a href="javascript:void(0);" onclick="toggleMenuButtonSegurancaDropdown()" class="toggleDropdown">Segurança</a>
+
+            <div class="segurancaDropdownContent">
+                <a href="" class="aDropdown">Alterar e-mail</a>
+                <a href="" class="aDropdown">Alterar numero</a>
+                <a href="" class="aDropdown">Alterar senha</a>
+            </div>
+          </div>
+
+
+
+          <div class="centralDeAjudaDropdown">
+            <a href="javascript:void(0);" onclick="toggleMenuButtonCentraDeAjudaDropdown()" class="toggleDropdown">Central de Ajuda</a>
+
+            <div class="centralDeAjudaDropdownContent">
+                <a href="" class="aDropdown">Duvidas frequentes</a>
+                <a href="" class="aDropdown">Suporte</a>
+            </div>
+          </div>
+
+
+          
+          <div class="privacidadeDropdown">
+            <a href="javascript:void(0);" onclick="toggleMenuButtonPrinvacidadeDropdown()" class="toggleDropdown">Privacidade</a>
+
+            <div class="privacidadeDropdownContent">
+                <a href="" class="aDropdown">Politica de privacidade</a>
+                <a href="" class="aDropdown">Termos de uso</a>
+                <a href="" class="aDropdown">Condições e regras do app</a>
+            </div>
+          </div>
+
+
+
+          <div class="notificacoesDropdown">
+            <a href="javascript:void(0);" onclick="toggleMenuButtonNotificacoesDropdown()" class="toggleDropdown">Notificações</a>
+
+            <div class="notificacoesDropdownContent">
+                <p>Notificações</p><div class="liga-desliga">
+                  <input type="checkbox" class="liga-desliga_checkbox" id="liga-desliga">
+                  <label for="liga-desliga" class="liga-desliga_botao"></label>
+                </div>
+                <!-- botão de notificação on e off -->
+            </div>
+          </div>
+
+            <!-- botao logout -->
+
+            <div class="botao">
+            <button id="logoutButton"><i class="fa-sharp fa-solid fa-person-to-door"></i><a href="../templates/cadastro.html">Sair</a></button>
+          </div>
+
+
+
+
+        </div>
+        <!-- <script>
+          
+          document.getElementById("logoutButton").addEventListener("click", function() {
+              
+              sessionStorage.clear();
+              localStorage.clear(); 
+              
+              // Redirect to the login page
+              window.location.href = "cadastro.html"; 
+          });
+      </script> -->
+      </div>
+    </div>
+
+    <!-- Conteúdo da página -->
+    <div class="content">
+      <header>
+        <nav class="navbar">
+          <!-- começo navbar top -->
+          <div class="navbarTop">
+            <!-- Começo Divisão 1 da navbar Top -->
+            <div class="containerSeparacao01">
+              <!-- logomarca e menu hamburguer -->
+              <div class="navbarLogomarca">
+                <a class="linkMenuhamburguer" href="javascript:void(0);" onclick="toggleMenu()" >
+                  <!-- menu hambunguer -->
+                  <i class="fa-solid fa-bars"></i>
+                </a>
+
+                <!-- Container para o menu -->
+                <div id="menu" class="menu">
+                  <a href="vagas.html">Vagas</a>
+                  <a href="campeonato.html">Campeonato</a>
+                  <a href="mensagens.html">Mensagens</a>
+                </div>
+
+                <!-- container vazio para separar o menu da logomarca  -->
+                <div class="containerEmpty"></div>
+
+                <!-- img logomarca -->
+                <a href="vagas.html">
+                  <img src="../static/img/Logo/logomarca.png" alt="Logomarca" />
+                </a>
+              </div>
+            </div>
+
+            <!-- container vazio para separar as divisões 1 e 2  -->
+            <div class="containerEmpty02"></div>
+
+            <!-- Começo Divisão 2 da navbar Top -->
+            <div class="containerSeparacao02">
+              <!-- barra de pesquisa -->
+              <div class="navbarSearch">
+                <input type="text" placeholder="Pesquisar..." />
+                <button type="submit">
+                  <i class="fa fa-search"></i>
+                </button>
+              </div>
+
+              <div class="containerEmpty03"></div>
+
+              <!-- foto de perfil navbar -->
+              <div class="navbarPhoto">
+                <a href="../templates/telaPerfilaADM.html">
+                  <img src="../static/img/Perfil/perfil.PNG" alt="" />
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- fim navbar top -->
+
+          <!-- começo navbar bottom -->
+          <div class="navbarBottom">
+            <a href="../templates/vagasADM.html">Vagas</a>
+            <a href="../templates/campeonatoADM.html">Campeonato</a>
+            <a href="../templates/mensagens.html">Mensagens</a>
+          </div>
+
+          <!-- fim navbar bottom -->
+        </nav>
+      </header>
+
+      <section class="sectionBody">
+        <div class="containerPrincModal">
+          <div class="containerModals" id="containerModal01">
+            <div class="containerDivis01">
+
+
+              <div class="containerDivis01Img">
+                <img src="../static/img/Modalidades/ginasticaBrasil.jpg" alt="">
+              </div>
+
+
+              <div class="containerdiv01-1">
+                <h2 class="containerDivis01h2">Ginastica de Argola</h2>
+                <span>Comitê Olímpico do Brasil (COB)</span>
+                <span> São Bernardo - SP </span>
+                <span><i class="fa-solid fa-exclamation"></i> Três vezes na semana</span>
+
+              </div>
+              
+
+            </div>
+
+            <div class="containerDivis02">
+              <div class="containerAvaliation">
+                <span>4.9</span>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <button class="containerDivis02Button" onclick="goToPageCurriculo()"><i class=""></i> Ver Curriculos </button>
+              <button class="containerDivis03Button" onclick="goToPageCurriculo()"><i class=""></i> Editar Informaçãoes</button>
+            </div>
+          </div>
+
+          
+    </head>
+    <body>
+    
+     
+
+    
+
+    <!-- Div de desfoque de fundo -->
+    <div id="blur-background"></div>
+
+    <!-- Container centralizado -->
+    <div id="container">
+     
+        <h2 class="addvaga">Adicionar vaga</h2>
+        <form>
+          <div class="teste">
+           <br>
+              <label class="titulo" for="titulo">Título:</label>
+              <input class="input-detail" type="text" id="titulo" name="titulo" >
+          
+<br>
+            <label class="local" for="local">Local:</label>
+            <input class="input-detail" type="text" id="local" name="local" >
+<br>
+            <label class="horario" for="horario">Horário:</label>
+            <input class="input-detail" type="text" id="horario" name="horario">
+<br>
+            <label class="descricao" for="descricao">Descrição da vaga:</label>
+            <input class="input-detail" id="descricao" name="descricao">
+<br>
+            <label class="beneficios" for="beneficios">Benefícios:</label>
+            <input class="input-detail" id="beneficios" name="beneficios" >
+<br>
+            <label class="requisitos" for="requisitos">Requisitos:</label>
+            <input class="input-detail" id="requisitos" name="requisitos" >
+
+        <button onclick="fecharContainer()" class="button-vaga">Criar Vaga</button>
+      </div>
+    </form>
+    </div>  
+
+  
+
+
+
+        <div class="containerButtonReadMore">
+          <button class="buttonReadMore " onclick="mostrarContainer()" > <svg class="mais" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24"><path fill="white" d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6z"/></svg> <h1 class="adicionar-vaga"> Adicionar Vaga</h1></button>
+        </div>
+      </section>
+
+      <!-- FOOTER -->
+      <footer class="footer">
+
+        <div class="containerTopFooter">
+          <div class="topFooter01">
+            <input type="text" placeholder="Pesquisar..." />
+            
+            <button type="submit">
+              <span>Enviar</span>
+            </button>
+          </div>
+
+          <div class="topFooter02">
+
+            <div class="circleIcon">
+              <a href="https://wa.me/5511995685300">
+                <i class="fa-brands fa-whatsapp"></i>
+              </a>
+            </div>
+
+            <div class="circleIcon">
+              <a href="">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+            </div>
+
+            <div class="circleIcon">
+              <a href="">
+                <i class="fa-brands fa-facebook"></i>
+              </a>
+            </div>
+
+            <div class="circleIcon">
+              <a href="">
+                <i class="fa-brands fa-twitter"></i>
+              </a>
+            </div>
+
+          </div>
+      </div>
+
+        <div class="bottomFooter">
+          <span>CopyRight 2024 &copy Todos os direitos Reservados</span>
+        </div>
+
+
+      </footer>
+    </div>
+  </body>
+</html>

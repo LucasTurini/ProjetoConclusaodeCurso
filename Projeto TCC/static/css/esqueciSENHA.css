@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+body {
+    background-color: #336a2e;
+    width: 100%;
+    height: 100vh;
+}
+
+body::-webkit-scrollbar {
+    display: none; /* Oculta a barra de rolagem */
+}
+
+.containerPrinc {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.containerLogin {
+    width: 500px;
+    height: 800px;
+    border-radius: 5%;
+    background-color: #043600;
+    display: grid;
+    justify-content: center;
+}
+
+.containerLogo{
+    width: 300px;
+    height: 300px;
+}
+
+.logoLogin {
+    width: 300px;
+    height: 300px;
+}
+
+.containerDatas {
+    display: flex;
+    flex-direction: column;
+}
+
+.containerEmpty {
+    height: 50px;
+}
+
+.containerEmpty02{
+    height: 10px;
+}
+
+.containerDatas input {
+    width: 300px;
+    height: 50px;
+    border-bottom: solid #ffffff 1px;
+    border-top: transparent; /*tirar borda do topo*/
+    border-left: transparent; /*tirar borda da esquerda*/
+    border-right: transparent; /*tirar borda da direita*/
+    background-color: transparent; /*tirar fundo do input*/
+}
+
+.containerDatas input::placeholder {
+    color: #ffffff;
+    font-family: 'Inter', sans-serif;
+    font-size: 18px; /* Ajusta o tamanho da fonte do placeholder */
+    font-weight: 300; /* Peso da fonte mais fino */
+}
+
+.containerLogin .containerButtons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    width: 100;
+}
+
+.btnLogin{
+    background-color: #ffffff;
+    padding: 10px;
+    font-weight: 800;
+    border: none;
+    border-radius: 25px; /* Ajuste o border-radius para px */
+    width: 90%;
+    text-align: center; /* Centraliza o texto */
+    box-sizing: border-box; /* Considera padding e border na largura total */
+}
+
+.btnSingIn{
+    background-color: #3ea301;
+    padding: 10px;
+    font-weight: 800;
+    border: none;
+    border-radius: 25px; 
+    width: 90%;
+    text-align: center; 
+    box-sizing: border-box; 
+}
+
+.btnPassword{
+    background-color: transparent ;/*tirar fundo do button*/
+    border-bottom: transparent; /*tirar borda debaixo*/
+    border-top: transparent; /*tirar borda do topo*/
+    border-left: transparent; /*tirar borda da esquerda*/
+    border-right: transparent; /*tirar borda da direita*/
+    font-family: 'Inter', sans-serif;
+    color: #ffffff;
+    font-weight: 300; /* Peso da fonte mais fino */
+    font-size: 18px; /* Ajusta o tamanho da fonte do placeholder */
+}
+
+.btn-arquivo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -100px;
+    width: 110px;
+    height: 20px;
+}
+
+.label-branco {
+    color: #ffffff;
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+}
+
+
+.senha{
+    color: white;
+}
